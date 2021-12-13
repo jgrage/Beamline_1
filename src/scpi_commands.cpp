@@ -116,7 +116,7 @@ scpi_error_t valve3_getstate(struct scpi_parser_context* context, struct scpi_to
     return SCPI_SUCCESS;
 }
 
-
+/*
 // Valve4 commands
 scpi_error_t valve4_open(struct scpi_parser_context* context, struct scpi_token* command)
 {
@@ -142,3 +142,4 @@ scpi_error_t valve4_getstate(struct scpi_parser_context* context, struct scpi_to
     RESPONSE_LEN = snprintf(SEND_BUFFER, BUFFER_LEN, "%s\n", VALVE_STATE_STRING[valve4.state]);
     return SCPI_SUCCESS;
 }
+*/
