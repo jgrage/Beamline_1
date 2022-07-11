@@ -74,7 +74,7 @@ void blockable_valve::update_state(){
          * in pressure. Depending on the distance of the pressure
          * sensors and the setpoints this should trigger on medium
          * sized leaks in the system */
-        if (left.state == right.state){
+        if (left.state != right.state){
             close();
         }
     }
