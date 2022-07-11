@@ -70,24 +70,4 @@ class obstructable_valve : public valve
         
 };
 
-/* ------------------------------------------------
- * angle valves used for venting and depressurizing
- * ------------------------------------------------
- */
-class angle_valve : public valve
-{
-    public:
-        angle_valve(valve& first_valve, valve& second_valve);
-        void connect_third_valve(valve *third_valve);
-        void update_state();
-        
-    private:
-        valve& first;       // Gate Valve 1
-        valve& second;      // Gate Valve 2
-        valve *third;       // Other angle_valve
-
-    protected:
-        
-};
-
 #endif
